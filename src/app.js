@@ -9,7 +9,7 @@ const bookmarkRouter = require('./bookmarks/bookmarks-router');
 
 const app = express();
 
-const morganOption = NODE_ENV === 'production' ? 'tiny' : 'common';
+const morganOption = NODE_ENV === 'production' ? 'tiny' : 'dev';
 
 app.use(morgan(morganOption));
 app.use(helmet());
